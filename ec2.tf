@@ -73,3 +73,7 @@ resource "aws_instance" "vm1" {
 output "PublicIpAddress" {
   value = aws_instance.vm1.public_ip
 }
+
+resource "aws_s3_bucket" "mkb1" {
+  bucket = "natwest-mk29v1b1-02102024"
+}
